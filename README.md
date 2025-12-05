@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Password Manager (local)
 
 Simple local password manager implemented in Java + SQLite.
@@ -42,3 +43,7 @@ Security notes
 - Keep your master password secret. The app derives a key with PBKDF2 and stores a salt in the DB.
 - This is a minimal example — audit, harden and add secure backup for production use.
 
+=======
+# Secure-Password-Manager-Local-
+CLI or desktop app (JavaFX, or Python + Tkinter).  Store credentials encrypted with master password (e.g., AES).  Proper salting/hashing for master password (PBKDF2, bcrypt, etc).
+>>>>>>> origin/main
