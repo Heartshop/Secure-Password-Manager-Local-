@@ -1,0 +1,12 @@
+target/
+*.class
+*.log
+.vscode/
+.idea/
+passwords.db
+*.db
+*.iml
+bin/
+*.jar
+/.mvn/
+.mvn/wrapper/maven-wrapper.jar
