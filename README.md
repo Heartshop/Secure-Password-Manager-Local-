@@ -1,12 +1,18 @@
-<<<<<<< HEAD
-# Password Manager (local)
+﻿# Secure Password Manager (local)
 
-Simple local password manager implemented in Java + SQLite.
+Local CLI password manager implemented in Java + SQLite.
 
-Features:
-- Master password derived key (PBKDF2WithHmacSHA256)
-- AES-GCM encryption per entry
+Overview
+
+- A minimal, local-first password manager that encrypts entries with a master password and stores
+  ciphertext in a local SQLite database.
+
+Features
+
+- Master password key derivation (PBKDF2WithHmacSHA256)
+- Per-entry encryption using AES-GCM
 - Store encrypted entries in a local SQLite DB (`passwords.db`)
+- CLI-first design; can be extended to a desktop UI (JavaFX) or other frontends
 
 Quick start
 
@@ -40,10 +46,15 @@ java -jar target\password-manager-0.1.0.jar list
 ```
 
 Security notes
-- Keep your master password secret. The app derives a key with PBKDF2 and stores a salt in the DB.
-- This is a minimal example — audit, harden and add secure backup for production use.
 
-=======
-# Secure-Password-Manager-Local-
-CLI or desktop app (JavaFX, or Python + Tkinter).  Store credentials encrypted with master password (e.g., AES).  Proper salting/hashing for master password (PBKDF2, bcrypt, etc).
->>>>>>> origin/main
+- Keep your master password secret. The app derives a key with PBKDF2 and stores a salt in the DB.
+- This is a minimal example  audit, harden, and add secure backup for production use.
+
+Contributing
+
+- Suggestions, issues and PRs are welcome. If you plan to extend the project with a GUI,
+  consider adding integration tests and documenting the threat model.
+
+License
+
+- (Add a license file or choose a license for your project.)
